@@ -1,0 +1,8 @@
+opencv-python
+numpy
+PyPDF2
+msoffcrypto-tool
+python-docx
+openpyxl
+PyQt5
+pandas
