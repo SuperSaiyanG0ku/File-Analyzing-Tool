@@ -1,0 +1,192 @@
+/* Global Styles */
+QMainWindow {
+    background-color: #F5F7FB;
+    color: #1E293B;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+QWidget#centralWidget {
+    background-color: #F5F7FB;
+    border-radius: 20px;
+}
+
+/* Custom Title Bar */
+#titleBar {
+    background-color: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+#titleLabel {
+    color: #64748B;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+    border-bottom-left-radius: 20px;
+}
+
+#sidebar QPushButton {
+    background-color: transparent;
+    color: #64748B;
+    border: none;
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 12px;
+    margin: 4px 15px;
+}
+
+#sidebar QPushButton:hover {
+    background-color: #F8FAFC;
+    color: #1E293B;
+}
+
+#sidebar QPushButton[active="true"] {
+    background-color: #E0E7FF;
+    color: #4F46E5;
+    font-weight: 600;
+}
+
+/* Cards */
+QFrame#card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+}
+
+/* Stat Cards */
+#statCard {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+}
+
+#statCard[type="total"] { border-top: 4px solid #C4B5FD; }
+#statCard[type="online"] { border-top: 4px solid #BBF7D0; }
+#statCard[type="active"] { border-top: 4px solid #BFDBFE; }
+
+/* Quick Action Cards */
+#actionCard {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #E2E8F0;
+}
+
+#actionCard:hover {
+    background-color: #F8FAFC;
+    border: 1px solid #BFDBFE;
+}
+
+/* Table Styling */
+QTableWidget {
+    background-color: transparent;
+    color: #1E293B;
+    gridline-color: #F1F5F9;
+    border: none;
+    outline: none;
+    selection-background-color: #C7D2FE; /* Darker pastel indigo for selection */
+    selection-color: #0F172A; /* Dark letters on selection as requested */
+    alternate-background-color: #FAFBFE;
+}
+
+QTableWidget::item {
+    padding: 15px;
+    border-bottom: 1px solid #F1F5F9;
+    color: #1E293B;
+}
+
+QTableWidget::item:selected {
+    background-color: #C7D2FE;
+    color: #0F172A; /* Dark letters */
+    font-weight: 600;
+}
+
+QHeaderView::section {
+    background-color: #FFFFFF;
+    color: #64748B;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #E2E8F0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+QPushButton#primaryButton {
+    background-color: #C4B5FD;
+    color: #1E293B;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: none;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #B4A2FD;
+}
+
+QPushButton#connectButton {
+    background-color: #BBF7D0;
+    color: #065F46;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton#disconnectButton {
+    background-color: #FECACA;
+    color: #991B1B;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+QLineEdit, QComboBox {
+    background-color: #FFFFFF;
+    color: #1E293B;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #C4B5FD;
+}
+
+/* Status Labels */
+QLabel#statusOnline { color: #15803D; font-weight: 700; }
+QLabel#statusOffline { color: #B91C1C; font-weight: 700; }
+QLabel#statusReady { color: #4338CA; font-weight: 700; }
+
+/* Connection Card Selection State */
+QFrame#card[selected="true"] {
+    background-color: #EEF2FF;
+    border: 2px solid #C4B5FD;
+}
+
+/* ScrollBar */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 6px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #E2E8F0;
+    min-height: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #CBD5E1;
+}
